@@ -1,0 +1,11 @@
+{
+  "name": "receive_sample",
+  "cloudcode": {
+    "runtime": "1.4.2",
+    "web": true,
+    "enabled": true
+  },
+  "dependencies": {
+
+  }
+}

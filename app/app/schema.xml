@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-model>
+    <!-- Do not remove this — it is used to store information about your app's users: -->
+    <model name="user" label="User">
+        <field name="name" label="Name" type="text:name"/>
+
+        <display>{name}</display>
+    </model>
+    
+    <model name="sample" label="Sample">
+        <field name="captured_at" label="Captured At" type="datetime" />
+        <field name="temperature" label="Temperature (C)" type="number" />
+        <field name="humidity" label="Humidity" type="number" />
+        <display>{captured_at} - {temperature}</display>
+    </model>
+    
+    <!-- Used for Push Notifications — to send a push notification, create a 'push_notification' object -->
+    <!--                               and specify the recipient in the 'belongs to user' relationship -->
+    <!-- For more details, refer to: http://resources.journeyapps.com/v4/push-notifications -->
+    <model name="push_notification" label="Push Notification">
+        <field name="message" label="Message" type="text" />
+        <field name="received_at" label="Received At" type="datetime" />
+        <field name="created_at" label="Created At" type="datetime" />
+        
+        <belongs-to model="user" />
+        <display>{message} ({user})</display>
+        <notify-user message="{message}" received-field="received_at" recipient-field="user"/>
+    </model>
+
+  
+    <!-- ADD MODELS HERE: -->
+    
+    
+    
+</data-model>

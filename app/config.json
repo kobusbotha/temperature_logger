@@ -1,0 +1,87 @@
+{
+    "children": {
+        "cloudcode": {
+            "name": "cloudcode",
+            "path": "cloudcode",
+            "type": "folder",
+            "children": {
+                "receive_sample": {
+                    "name": "receive_sample",
+                    "path": "cloudcode/receive_sample",
+                    "type": "folder",
+                    "children": {
+                        "index.js": {
+                            "name": "index.js",
+                            "path": "cloudcode/receive_sample/index.js",
+                            "type": "file"
+                        },
+                        "package.json": {
+                            "name": "package.json",
+                            "path": "cloudcode/receive_sample/package.json",
+                            "type": "file"
+                        }
+                    }
+                }
+            }
+        },
+        "mobile": {
+            "name": "mobile",
+            "path": "mobile",
+            "type": "folder",
+            "children": {
+                "html": {
+                    "name": "html",
+                    "path": "mobile/html",
+                    "type": "folder",
+                    "children": {
+                        "plot2.html": {
+                            "name": "plot2.html",
+                            "path": "mobile/html/plot2.html",
+                            "type": "file"
+                        }
+                    }
+                },
+                "app.js": {
+                    "name": "app.js",
+                    "path": "mobile/app.js",
+                    "type": "file"
+                },
+                "htmlpage.js": {
+                    "name": "htmlpage.js",
+                    "path": "mobile/htmlpage.js",
+                    "type": "file"
+                },
+                "htmlpage.view.xml": {
+                    "name": "htmlpage.view.xml",
+                    "path": "mobile/htmlpage.view.xml",
+                    "type": "file"
+                },
+                "main.js": {
+                    "name": "main.js",
+                    "path": "mobile/main.js",
+                    "type": "file"
+                },
+                "main.view.xml": {
+                    "name": "main.view.xml",
+                    "path": "mobile/main.view.xml",
+                    "type": "file"
+                }
+            }
+        },
+        "config.json": {
+            "name": "config.json",
+            "path": "config.json",
+            "type": "file"
+        },
+        "schema.xml": {
+            "name": "schema.xml",
+            "path": "schema.xml",
+            "type": "file"
+        },
+        "sync_rules.xml": {
+            "name": "sync_rules.xml",
+            "path": "sync_rules.xml",
+            "type": "file"
+        }
+    }
+}

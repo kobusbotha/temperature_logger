@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view title="">
+    <var name="samples" type="query:sample" />
+    
+    <button label="gotohtml" on-press="link.htmlpage" validate="false" />
+    
+    <!-- Components go here: -->   
+    <object-table label="Samples" query="samples" empty-message="Your items will appear here" controls="top">
+        <column heading="Time">{captured_at}</column>
+        <column heading="Temp">{temperature}</column>
+        <column heading="Humdty">{humidity:.0f}</column>
+        <button-group>
+            <button label="Refresh" on-press="$:refresh()" validate="false" />
+        </button-group>
+    </object-table>
+    
+</view>
